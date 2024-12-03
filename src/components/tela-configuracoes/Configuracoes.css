@@ -1,0 +1,145 @@
+/* Estilos principais */
+:root {
+  --background-color: #fff;
+  --text-color: #000;
+  --button-background-color: #007BFF;
+  --button-hover-background-color: #0056b3;
+}
+
+[data-theme='dark'] {
+  --background-color: #333;
+  --text-color: #fff;
+  --button-background-color: #555;
+  --button-hover-background-color: #777;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.configuracoes-container {
+  margin: 20px auto; /* Centraliza o contêiner */
+  padding: 20px;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Limita a largura máxima */
+}
+
+.configuracoes-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.form-group select,
+.form-group input[type="checkbox"] {
+  padding: 8px;
+  flex: 1; /* Ajusta a largura do select e checkbox */
+  box-sizing: border-box; /* Garante que o padding não exceda a largura */
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-group label {
+  margin-right: auto; /* Empurra o checkbox para a direita */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: var(--button-background-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--button-hover-background-color);
+}
+
+/* Responsividade para Dispositivos Móveis */
+@media (max-width: 600px) {
+  .configuracoes-container {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .configuracoes-container h1 {
+    font-size: 20px; /* Ajusta o tamanho da fonte para telas menores */
+    margin-bottom: 15px;
+  }
+
+  .form-group select,
+  .form-group input[type="checkbox"] {
+    padding: 6px; /* Ajusta o padding para telas menores */
+  }
+
+  button {
+    padding: 8px 15px; /* Ajusta o padding do botão para telas menores */
+    font-size: 14px; /* Ajusta o tamanho da fonte do botão para telas menores */
+  }
+}
+
+/* Responsividade para Tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+  .configuracoes-container {
+    margin: 15px;
+    padding: 18px;
+  }
+
+  .configuracoes-container h1 {
+    font-size: 22px; /* Ajusta o tamanho da fonte para tablets */
+    margin-bottom: 18px;
+  }
+
+  .form-group select,
+  .form-group input[type="checkbox"] {
+    padding: 7px; /* Ajusta o padding para tablets */
+  }
+
+  button {
+    padding: 9px 18px; /* Ajusta o padding do botão para tablets */
+    font-size: 15px; /* Ajusta o tamanho da fonte do botão para tablets */
+  }
+}
+
+/* Responsividade para Desktops */
+@media (min-width: 901px) {
+  .configuracoes-container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .configuracoes-container h1 {
+    font-size: 24px; /* Mantém o tamanho da fonte para desktops */
+    margin-bottom: 20px;
+  }
+
+  .form-group select,
+  .form-group input[type="checkbox"] {
+    padding: 8px; /* Mantém o padding para desktops */
+  }
+
+  button {
+    padding: 10px 20px; /* Mantém o padding do botão para desktops */
+    font-size: 16px; /* Mantém o tamanho da fonte do botão para desktops */
+  }
+}

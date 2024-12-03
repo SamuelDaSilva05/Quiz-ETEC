@@ -1,0 +1,111 @@
+/* Estilos principais */
+.sidebar-container {
+  width: 250px;
+  height: 100vh;
+  background-color:#1860ae;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  position: fixed;
+  left: -250px; /* Escondido inicialmente */
+  transition: left 0.3s ease-in-out;
+  margin: 20px 0;
+}
+
+.sidebar-container.open {
+  left: 0; /* Visível quando aberto */
+  margin: 20px 0;
+}
+
+.sidebar-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  margin-left: 45px;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar-nav ul li {
+  padding: 15px 20px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.sidebar-nav ul li:hover {
+  background-color: #444;
+}
+
+/* Responsividade para Dispositivos Móveis */
+@media (max-width: 600px) {
+  .sidebar-container {
+    width: 200px; /* Ajusta a largura para telas menores */
+    left: -200px; /* Ajusta a posição escondida para telas menores */
+  }
+
+  .sidebar-container.open {
+    left: 0; /* Mantém a visibilidade quando aberto */
+  }
+
+  .sidebar-logo {
+    width: 60px; /* Ajusta o tamanho do logo para telas menores */
+    height: 60px;
+    margin-left: 30px;
+  }
+
+  .sidebar-nav ul li {
+    padding: 10px 15px; /* Ajusta o padding para telas menores */
+  }
+}
+
+/* Responsividade para Tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+  .sidebar-container {
+    width: 220px; /* Ajusta a largura para tablets */
+    left: -220px; /* Ajusta a posição escondida para tablets */
+  }
+
+  .sidebar-container.open {
+    left: 0; /* Mantém a visibilidade quando aberto */
+  }
+
+  .sidebar-logo {
+    width: 70px; /* Ajusta o tamanho do logo para tablets */
+    height: 70px;
+    margin-left: 40px;
+  }
+
+  .sidebar-nav ul li {
+    padding: 12px 18px; /* Ajusta o padding para tablets */
+  }
+}
+
+/* Responsividade para Desktops */
+@media (min-width: 901px) {
+  .sidebar-container {
+    width: 250px; /* Mantém a largura para desktops */
+    left: -250px; /* Mantém a posição escondida para desktops */
+  }
+
+  .sidebar-container.open {
+    left: 0; /* Mantém a visibilidade quando aberto */
+  }
+
+  .sidebar-logo {
+    width: 80px; /* Mantém o tamanho do logo para desktops */
+    height: 80px;
+    margin-left: 45px;
+  }
+
+  .sidebar-nav ul li {
+    padding: 15px 20px; /* Mantém o padding para desktops */
+  }
+}

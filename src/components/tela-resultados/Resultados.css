@@ -1,0 +1,174 @@
+/* Estilos principais */
+.resultados-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.resultados-container h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.resultados-container .pontuacao {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.resultados-container .feedback {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.resultados-container .recomendacoes h2 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.resultados-container .recomendacoes ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.resultados-container .recomendacoes li {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.resultados-container .buttons-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.resultados-container .button {
+  padding: 12px 25px;
+  font-size: 18px;
+  color: white;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.resultados-container .button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsividade para Dispositivos Móveis */
+@media (max-width: 600px) {
+  .resultados-container {
+    padding: 20px; /* Ajusta o padding para telas menores */
+  }
+
+  .resultados-container h1 {
+    font-size: 24px; /* Ajusta o tamanho da fonte para telas menores */
+    margin-bottom: 20px;
+  }
+
+  .resultados-container .pontuacao,
+  .resultados-container .feedback {
+    font-size: 16px; /* Ajusta o tamanho da fonte para telas menores */
+    margin-bottom: 15px;
+  }
+
+  .resultados-container .recomendacoes h2 {
+    font-size: 20px; /* Ajusta o tamanho da fonte para telas menores */
+    margin-bottom: 10px;
+  }
+
+  .resultados-container .recomendacoes li {
+    font-size: 16px; /* Ajusta o tamanho da fonte para telas menores */
+    margin-bottom: 8px;
+  }
+
+  .resultados-container .button {
+    padding: 10px 20px; /* Ajusta o padding do botão para telas menores */
+    font-size: 16px; /* Mantém o tamanho da fonte do botão para telas menores */
+  }
+}
+
+/* Responsividade para Tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+  .resultados-container {
+    padding: 30px; /* Ajusta o padding para tablets */
+  }
+
+  .resultados-container h1 {
+    font-size: 28px; /* Ajusta o tamanho da fonte para tablets */
+    margin-bottom: 25px;
+  }
+
+  .resultados-container .pontuacao,
+  .resultados-container .feedback {
+    font-size: 18px; /* Ajusta o tamanho da fonte para tablets */
+    margin-bottom: 18px;
+  }
+
+  .resultados-container .recomendacoes h2 {
+    font-size: 22px; /* Ajusta o tamanho da fonte para tablets */
+    margin-bottom: 15px;
+  }
+
+  .resultados-container .recomendacoes li {
+    font-size: 17px; /* Ajusta o tamanho da fonte para tablets */
+    margin-bottom: 9px;
+  }
+
+  .resultados-container .button {
+    padding: 11px 22px; /* Ajusta o padding do botão para tablets */
+    font-size: 17px; /* Ajusta o tamanho da fonte do botão para tablets */
+  }
+}
+
+/* Responsividade para Desktops */
+@media (min-width: 901px) {
+  .resultados-container {
+    padding: 40px; /* Mantém o padding para desktops */
+  }
+
+  .resultados-container h1 {
+    font-size: 32px; /* Mantém o tamanho da fonte para desktops */
+    margin-bottom: 30px;
+  }
+
+  .resultados-container .pontuacao,
+  .resultados-container .feedback {
+    font-size: 18px; /* Mantém o tamanho da fonte para desktops */
+    margin-bottom: 20px;
+  }
+
+  .resultados-container .recomendacoes h2 {
+    font-size: 22px; /* Mantém o tamanho da fonte para desktops */
+    margin-bottom: 15px;
+  }
+
+  .resultados-container .recomendacoes li {
+    font-size: 18px; /* Mantém o tamanho da fonte para desktops */
+    margin-bottom: 10px;
+  }
+
+  .resultados-container .button {
+    padding: 12px 25px; /* Mantém o padding do botão para desktops */
+    font-size: 18px; /* Mantém o tamanho da fonte do botão para desktops */
+  }
+}

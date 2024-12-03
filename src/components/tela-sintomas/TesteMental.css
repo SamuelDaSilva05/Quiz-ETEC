@@ -1,0 +1,442 @@
+/* Estilos principais */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Previne rolagem dupla */
+  scroll-behavior: smooth; /* Scroll suave */
+}
+
+body, .app-container {
+  overflow-y: auto; /* Garante que a rolagem seja possível */
+  height: 100%;
+}
+
+
+.test-button.completed {
+  background-color: #28a745;
+  color: white;
+}
+
+.test-button.completed:hover {
+  background-color: #218838;
+}
+
+body.high-contrast {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+body.large-text {
+  font-size: 20px;
+}
+
+.app-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+  overflow-y: auto; /* Permite rolagem apenas no container */
+  overflow-x: hidden; /* Evita barras de rolagem laterais */
+  -webkit-overflow-scrolling: touch; /* Scroll suave para dispositivos móveis */
+  margin: -15px 0; /* Remove margens extras */
+}
+
+.main-content {
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  overflow-x: hidden; /* Remove rolagem lateral */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destaque */
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  background-color: #007BFF; /* Muda a cor de fundo para o azul dos botões */
+  color: white;
+  border-top-left-radius: 10px; /* Bordas arredondadas no topo esquerdo */
+  border-top-right-radius: 10px; /* Bordas arredondadas no topo direito */
+}
+
+.hamburger-button {
+  font-size: 24px;
+  background: none;
+  background-color: #007BFF;
+  border: none;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  left: 20px;
+}
+
+.title {
+  font-size: 32px;
+  margin: 0 20px; /* Adiciona margem lateral para espaçamento */
+}
+
+.intro-section {
+  margin-bottom: 30px;
+}
+
+.description {
+  font-size: 18px;
+  padding: 20px;
+  color: #666;
+  margin: 0 20px; /* Adiciona margem lateral para melhor espaçamento */
+}
+
+.progress-section {
+  margin-bottom: 30px;
+}
+
+.progress-bar-container {
+  width: 100%;
+  max-width: 600px;
+  background-color: #ddd;
+  border-radius: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: #007BFF;
+  text-align: center;
+  line-height: 20px;
+  color: white;
+  font-weight: bold;
+  transition: width 0.3s ease-in-out;
+}
+
+.tests-section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 20px; /* Adiciona margem lateral para melhor espaçamento */
+}
+
+.test-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  min-width: 150px;
+  text-align: center;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+}
+
+.test-button:hover {
+  background-color: #0056b3;
+}
+
+.button-text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.start-text {
+  font-size: 14px;
+}
+
+.stats-section {
+  margin-bottom: 30px;
+}
+
+.quick-stats {
+  text-align: left;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+}
+
+.quick-stats h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.quick-stats p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.motivation-section {
+  margin-bottom: 30px;
+}
+
+.motivation-message {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center; /* Centraliza o texto */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+}
+
+.motivation-message h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.motivation-message p {
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.motivation-message .professional {
+  font-weight: bold;
+  color: #333;
+}
+
+.motivation-message .date {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Responsividade para Dispositivos Móveis */
+@media (max-width: 600px) {
+  .title {
+    font-size: 24px; /* Ajusta o tamanho da fonte do título */
+  }
+
+  .description {
+    font-size: 14px; /* Ajusta o tamanho da fonte da descrição */
+    padding: 20px 10px;
+  }
+
+  .section-title {
+    font-size: 18px; /* Ajusta o tamanho da fonte dos títulos das seções */
+  }
+
+  .test-button {
+    padding: 10px; /* Reduz o padding dos botões */
+    min-width: 100px; /* Reduz a largura mínima dos botões */
+  }
+
+  .button-text {
+    font-size: 14px; /* Reduz o tamanho da fonte dos textos dos botões */
+  }
+
+  .quick-stats {
+    width: 95%; /* Ajusta a largura da seção de estatísticas rápidas */
+    padding: 8px; /* Reduz o padding */
+  }
+
+  .motivation-message {
+    width: 95%; /* Ajusta a largura da mensagem de motivação */
+    padding: 10px; /* Reduz o padding */
+  }
+}
+
+/* Responsividade para Tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+  .title {
+    font-size: 26px; /* Ajusta o tamanho da fonte do título */
+  }
+
+  .description {
+    font-size: 15px; /* Ajusta o tamanho da fonte da descrição */
+  }
+
+  .section-title {
+    font-size: 20px; /* Ajusta o tamanho da fonte dos títulos das seções */
+  }
+
+  .test-button {
+    padding: 12px; /* Ajusta o padding dos botões */
+    min-width: 110px; /* Ajusta a largura mínima dos botões */
+  }
+
+  .button-text {
+    font-size: 15px; /* Ajusta o tamanho da fonte dos textos dos botões */
+  }
+
+  .quick-stats {
+    width: 90%; /* Ajusta a largura da seção de estatísticas rápidas */
+    padding: 9px; /* Ajusta o padding */
+  }
+
+  .motivation-message {
+    width: 90%; /* Ajusta a largura da mensagem de motivação */
+    padding: 12px; /* Ajusta o padding */
+  }
+}
+
+/* Responsividade para Desktops */
+@media (min-width: 901px) {
+  .title {
+    font-size: 28px; /* Ajusta o tamanho da fonte do título */
+  }
+
+  .description {
+    font-size: 16px; /* Ajusta o tamanho da fonte da descrição */
+  }
+
+  .section-title {
+    font-size: 22px; /* Ajusta o tamanho da fonte dos títulos das seções */
+  }
+
+  .test-button {
+    padding: 15px; /* Ajusta o padding dos botões */
+    min-width: 130px; /* Ajusta a largura mínima dos botões */
+  }
+
+  .button-text {
+    font-size: 16px; /* Ajusta o tamanho da fonte dos textos dos botões */
+  }
+
+  .quick-stats {
+    width: 80%; /* Ajusta a largura da seção de estatísticas rápidas */
+    padding: 10px; /* Ajusta o padding */
+  }
+
+  .motivation-message {
+    width: 80%; /* Ajusta a largura da mensagem de motivação */
+    padding: 15px; /* Ajusta o padding */
+  }
+}
+
+/* Responsividade para Dispositivos Móveis */
+@media (max-width: 600px) {
+  .title {
+    font-size: 24px; /* Ajusta o tamanho da fonte do título */
+    color: white;
+  }
+
+  .description {
+    font-size: 14px; /* Ajusta o tamanho da fonte da descrição */
+    padding: 20px 10px;
+  }
+
+  .section-title {
+    font-size: 18px; /* Ajusta o tamanho da fonte dos títulos das seções */
+  }
+
+  .test-button {
+    padding: 10px; /* Reduz o padding dos botões */
+    min-width: 100px; /* Reduz a largura mínima dos botões */
+  }
+
+  .button-text {
+    font-size: 14px; /* Reduz o tamanho da fonte dos textos dos botões */
+  }
+
+  .quick-stats {
+    width: 95%; /* Ajusta a largura da seção de estatísticas rápidas */
+    padding: 8px; /* Reduz o padding */
+  }
+
+  .motivation-message {
+    width: 95%; /* Ajusta a largura da mensagem de motivação */
+    padding: 10px; /* Reduz o padding */
+  }
+}
+
+/* Responsividade para Tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+  .title {
+    font-size: 26px; /* Ajusta o tamanho da fonte do título */
+    color: white;
+  }
+
+  .description {
+    font-size: 15px; /* Ajusta o tamanho da fonte da descrição */
+  }
+
+  .section-title {
+    font-size: 20px; /* Ajusta o tamanho da fonte dos títulos das seções */
+  }
+
+  .test-button {
+    padding: 12px; /* Ajusta o padding dos botões */
+    min-width: 110px; /* Ajusta a largura mínima dos botões */
+  }
+
+  .button-text {
+    font-size: 15px; /* Ajusta o tamanho da fonte dos textos dos botões */
+  }
+
+  .quick-stats {
+    width: 90%; /* Ajusta a largura da seção de estatísticas rápidas */
+    padding: 9px; /* Ajusta o padding */
+  }
+
+  .motivation-message {
+    width: 90%; /* Ajusta a largura da mensagem de motivação */
+    padding: 12px; /* Ajusta o padding */
+  }
+}
+
+/* Responsividade para Desktops */
+@media (min-width: 901px) {
+  .title {
+    font-size: 28px; /* Ajusta o tamanho da fonte do título */
+    color: white;
+  }
+
+  .description {
+    font-size: 16px; /* Ajusta o tamanho da fonte da descrição */
+  }
+
+  .section-title {
+    font-size: 22px; /* Ajusta o tamanho da fonte dos títulos das seções */
+  }
+
+  .test-button {
+    padding: 15px; /* Ajusta o padding dos botões */
+    min-width: 130px; /* Ajusta a largura mínima dos botões */
+  }
+
+  .button-text {
+    font-size: 16px; /* Ajusta o tamanho da fonte dos textos dos botões */
+  }
+
+  .quick-stats {
+    width: 80%; /* Ajusta a largura da seção de estatísticas rápidas */
+    padding: 10px; /* Ajusta o padding */
+  }
+
+  .motivation-message {
+    width: 80%; /* Ajusta a largura da mensagem de motivação */
+    padding: 15px; /* Ajusta o padding */
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

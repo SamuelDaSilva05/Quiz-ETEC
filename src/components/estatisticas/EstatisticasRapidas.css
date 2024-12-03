@@ -1,0 +1,74 @@
+/* Estilos principais */
+.estatisticas-rapidas {
+  text-align: left;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.estatisticas-rapidas h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.estatisticas-rapidas p {
+  margin: 5px 0;
+  color: #666;
+}
+
+/* Responsividade para Dispositivos Móveis */
+@media (max-width: 600px) {
+  .estatisticas-rapidas {
+    width: 95%; /* Ajusta a largura para telas menores */
+    padding: 8px; /* Ajusta o padding para telas menores */
+  }
+
+  .estatisticas-rapidas h2 {
+    font-size: 18px; /* Ajusta o tamanho da fonte para cabeçalhos em telas menores */
+    margin-bottom: 8px; /* Ajusta a margem para telas menores */
+  }
+
+  .estatisticas-rapidas p {
+    font-size: 14px; /* Ajusta o tamanho da fonte para parágrafos em telas menores */
+    margin: 4px 0; /* Ajusta a margem para parágrafos em telas menores */
+  }
+}
+
+/* Responsividade para Tablets */
+@media (min-width: 601px) and (max-width: 900px) {
+  .estatisticas-rapidas {
+    width: 90%; /* Ajusta a largura para tablets */
+    padding: 9px; /* Ajusta o padding para tablets */
+  }
+
+  .estatisticas-rapidas h2 {
+    font-size: 20px; /* Ajusta o tamanho da fonte para cabeçalhos em tablets */
+    margin-bottom: 9px; /* Ajusta a margem para cabeçalhos em tablets */
+  }
+
+  .estatisticas-rapidas p {
+    font-size: 15px; /* Ajusta o tamanho da fonte para parágrafos em tablets */
+    margin: 5px 0; /* Ajusta a margem para parágrafos em tablets */
+  }
+}
+
+/* Responsividade para Desktops */
+@media (min-width: 901px) {
+  .estatisticas-rapidas {
+    width: 80%; /* Ajusta a largura para desktops */
+    padding: 10px; /* Mantém o padding para desktops */
+  }
+
+  .estatisticas-rapidas h2 {
+    font-size: 22px; /* Ajusta o tamanho da fonte para cabeçalhos em desktops */
+    margin-bottom: 10px; /* Mantém a margem para cabeçalhos em desktops */
+  }
+
+  .estatisticas-rapidas p {
+    font-size: 16px; /* Ajusta o tamanho da fonte para parágrafos em desktops */
+    margin: 5px 0; /* Mantém a margem para parágrafos em desktops */
+  }
+}
